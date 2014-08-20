@@ -1,0 +1,75 @@
+        <title>Vibesample</title>
+
+       
+    <header class="navbar navbar-default navbar-static-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+
+                </button> <a href="/" class="navbar-brand" ng-href="#">VibeSample</a>
+
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#">Starred</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Begin Body -->
+    <div class="container" ng-controller="MapController">
+        <div class="row">
+    <div class="col-md-6" id="leftCol">
+        <div class="list-group" ng-controller="ShowsCtrl">
+            <div class="nav nav-stacked list-group-item" id="sidebar" ng-repeat="(key, show) in shows.features" ng-mouseover="menuMouse(show)" ng-mouseout="menuMouseout(show)" ng-class="{hover: $index == hoveritem}">   
+
+                    <div class="col-md-3 text-center">
+                        <h2>{{show.properties.price}}</h2>
+                        <p id="tagtext">{{show.properties.tags}}<small> </small></p>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <h4 class="list-group-item-heading">{{show.properties.artist}}</h4>
+                        <p class="list-group-item-text">{{show.properties.venue}}</p>
+                    </div>
+
+                    <div class="media col-md-3">
+                        <figure class="pull-right">
+                        <img class="media-object img-rounded img-responsive" src="img/play_button.png" alt="playbutton" height="40px" width="40px" ng-click="streamTrack(show)" ng-show="show.visible != false">
+                        <img class="media-object img-rounded img-responsive" src="img/pause_button.png" alt="playbutton" height="40px" width="40px" padding-right="5px" ng-click="pauseTrack(show)" ng-show="show.visible == false">
+                        </figure>
+                    
+                    <span class="pull-right star" ng-controller="StarredCtrl">
+                          <h2 class="fa fa-star-o" ng-click="toggleStarred(show)"  ng-class="($index==show.isSta) ? 'fa-star' : 'fa-star-o'"></h2>
+                    </span>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+            <div class="col-md-6">
+            <leaflet center="center" events="events" geojson="geojson"></leaflet>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <h2>Home</h2>
+
+    <p class="status good" ng-show-auth>Hello! You are logged in with id {{user.uid}}.</p>
+    <p class="status" ng-hide-auth>Welcome. You are not <a href="#/login">logged in</a></p>
+
+    <input ng-model="syncedValue.$value" type="text" ng-change="syncedValue.$save()" /> <b>{{syncedValue.$value}}</b>
+
+    <p>Open <a ng-href="{{FBURL}}/syncedValue" target="_blank">Forge</a> or a <a target="_blank" href="#/">new window</a> to see this input update in real time.</p>
+

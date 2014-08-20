@@ -1,0 +1,114 @@
+
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.4204165, 37.7759644]
+        },
+        "properties": {
+            "id": "0",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Moullinex",
+            "venue": "Rickshaw Stop",
+            "price": "$20",
+            "stream_url": "http://api.soundcloud.com/tracks/133467605/stream",
+            "tags": "Electronic, House",
+            "more_info": "INSOURCE",
+            "venue_address": "155 Fell St, San Francisco, CA 94102"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.4085148, 37.7809924]
+        },
+        "properties": {
+            "id": "1",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Bit Funk",
+            "venue": "Monarch",
+            "price": "$25",
+            "stream_url": "http://api.soundcloud.com/tracks/115343497/stream",
+            "tags": "Electronic, Funk, House, Nu-Disco",
+            "more_info": "PLASMOX",
+            "venue_address": "101 Sixth St, San Francisco, CA 94102"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.4637331, 37.7831143]
+        },
+        "properties": {
+            "id": "2",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Miami Horror",
+            "venue": "Neck of the Woods",
+            "price": "$17",
+            "stream_url": "http://api.soundcloud.com/tracks/135334843/stream",
+            "tags": "Electronic, Nu-Disco",
+            "more_info": "ASSITIA",
+            "venue_address": "406 Clement St., San Francisco, CA 94118"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.421551, 37.787745]
+        },
+        "properties": {
+            "id": "3",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Metronomy",
+            "venue": "The Regency Ballroom",
+            "price": "$30",
+            "stream_url": "http://api.soundcloud.com/tracks/136788349/stream",
+            "tags": "Electronic, Smooth, Experimental, UK",
+            "more_info": "ECRATIC",
+            "venue_address": "1300 Van Ness, San Francisco, CA 94118"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.413795, 37.771362]
+        },
+        "properties": {
+            "id": "4",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Grum",
+            "venue": "Audio Discotech",
+            "price": "$15",
+            "stream_url": "http://api.soundcloud.com/tracks/132026799/stream",
+            "tags": "Electronic, Indie Dance",
+            "more_info": "RETROTEX",
+            "venue_address": "316 11th Street, San Francisco, CA 94118"
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-122.408194, 37.782219]
+        },
+        "properties": {
+            "id": "5",
+            "date": "2014-07-12",
+            "time": "22:00:00",
+            "artist": "Simian Mobile Disco",
+            "venue": "The Mezzanine",
+            "price": "$28",
+            "stream_url": "http://api.soundcloud.com/tracks/46481896/stream",
+            "tags": "Electronic, Dance, UK",
+            "more_info": "COREPAN",
+            "venue_address": "444 Jessie St, San Francisco, CA, 94118"
+        }
+    }
+    ]
+}
